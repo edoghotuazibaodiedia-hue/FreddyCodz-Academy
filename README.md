@@ -2,7 +2,7 @@
 A responsive educational website built using HTML, CSS, and JavaScript.
 
 Live Demo
-Coming Soon...
+[Coming Soon...](https://edoghotuazibaodiedia-hue.github.io/FreddyCodz-Academy/)
 
 About
 FreddyCodz Academy is a web development learning platform created to help beginners start their journey into front-end web development.
