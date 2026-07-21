@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign up</title>
+    <link rel="icon" type="image/png" href="./images/logo.png">
+    <link rel="stylesheet" href="./styles/inherit.css">
+    <link rel="stylesheet" href="./styles/signup.css">
+</head>
+<body>
+    <main>
+        <header>
+            <div class="header">
+                <div class="logo">
+                    <img src="./images/logo.png" alt="logo-img" height="40px">
+                    <h2>FreddyCodz <br>
+                        <span>Academy</span>
+                    </h2>
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="index.html" id="active">HOME</a></li>
+                        <li><a href="index.html#about">ABOUT</a></li>
+                        <li><a href="index.html#courses">COURSES</a></li>
+                        <li><a href="signup.html">ACCOUNT</a></li>
+                    </ul>
+                </nav>
+                <!-- <button onclick="window.location.href='index.html'">HOME</button> -->
+
+                <div class="menu" onclick="openSideNav()">
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                </div>
+            </div>
+        </header>
+
+        <div class="side-bar" id="navbar">
+            <img src="./images/x.png" alt="" onclick="closeSideNav()" id="closeIcon">
+            <div class="nav">
+                <a href="index.html">HOME</a>
+                <a href="index.html#about">ABOUT</a>
+                <a href="index.html#courses">COURSES</a>
+                <a href="signup.html">ACCOUNT</a>
+            </div>
+        </div>
+
+        <div class="form">
+            <h2>Sign Up</h2>
+
+            <form id="form">
+
+                <div class="form-control">
+                    <label for="fullName" id="name">Full Name</label>
+                    <input type="text" id="fullName" name="full_name" onclick="firstFocus()"/>
+                </div>
+
+                <div class="form-control">
+                    <label for="emailAddress" id="email">Email</label>
+                    <input type="email" id="emailAddress" name="email"/>
+                </div>
+
+                <div class="form-control">
+                    <label for="phoneNo" id="phone">Phone no</label>
+                    <input type="number" id="phoneNo" name="phone"/>
+                </div>
+
+                <div class="agree">
+                    <input type="checkbox" id="terms">
+                    <label for="terms">By signing up, I agree to code with FreddyCodz Academy's 
+                        <a href="policy.html">Privacy</a> &
+                        <a href="terms.html">Terms</a>
+                    </label>
+                </div>
+
+                <label id="error"></label>
+
+                <div class="button">
+                    <button>Register</button>
+                </div>
+
+                <p id="already">Already have an account?
+                    <span id="login" onclick="">Login</span>
+                </p>
+
+            </form>
+        </div>
+    </main>
+
+
+
+
+    <footer>
+        <p>&copy; 2026 FreddyCodz Academy. All Rights Reserved</p>
+        <div class="links">
+            <a href="https://www.linkedin.com/in/edoghotu-azibaodiedia-7a7187404?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank" rel="noopener noreferer"><img src="./images/linkedIn.jpg" alt="linkedin-icon"></a>
+            <a href="https://www.instagram.com/dev_freddy?igsh=cGQ3dmY5Z24weG9o" target="_blank" rel="noopener noreferer"><img src="./images/instagram.png" alt="instagram"></a>
+            <a href="https://www.tiktok.com/@edoghotuazibaodie?is_from_webapp=1&sender_device=pc" target="_blank" rel="noopener noreferer"><img src="./images/white-tiktok.png" alt="tiktok-icon"></a>
+        </div>
+        <p id="lastpara">
+            <a href="terms.html" id="terms">Terms of use </a>
+            <a href="policy.html" id="policy">Privacy Policy</a>
+        </p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script src="./script/signup.js"></script>
+    <script src="./script/side-nav.js"></script>
+</body>
+</html>

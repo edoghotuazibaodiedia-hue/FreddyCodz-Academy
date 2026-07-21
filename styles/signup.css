@@ -1,0 +1,110 @@
+main{
+    height: 700px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form{
+    width: 400px;
+    min-height: 400px;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 0 3px gray;
+
+}
+
+.form h2{
+    text-align: center;
+    font-size: 25px;
+    margin-bottom: 20px;
+    color: #000ba0;
+}
+
+.form form{
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.form-control{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.form-control input{
+    height: 30px;
+    width: 100%;
+    border-radius: 5px;
+    background-color: transparent;
+    border: 1px solid #000;
+    outline: none;
+    padding-left: 10px;
+}
+
+.form-control input:focus{
+    border: 1px solid #000ba0;
+}
+
+.agree{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+.agree input{
+    width: 30px;
+    height: 30px;
+}
+
+.agree label{
+    user-select: none;
+    cursor: pointer;
+    line-height: 25px;
+}
+
+form .button button{
+    margin-bottom: 20px;
+    width: 100%;
+    height: 40px;
+    background-color: #000ba0;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: .3s ease;
+}
+
+form .button button:active{
+    transform: scale(0.9);
+}
+
+#already{
+    text-align: center;
+}
+
+#error{
+    color: red;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+#login, a{
+    text-decoration: none;
+    color: #000ba0;
+    user-select: none;
+    cursor: pointer;
+}
+
+@media (max-width: 480px) {
+    .form{
+        transform: scale(0.9);
+    }
+}

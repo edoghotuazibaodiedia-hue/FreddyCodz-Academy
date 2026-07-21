@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FreddyCodz Academy</title>
+    <link rel="icon" type="image/png" href="./images/logo.png">
+    <link rel="stylesheet" href="./styles/inherit.css">
+    <link rel="stylesheet" href="./styles/style.css">
+</head>
+<body>
+    <main>
+        <header>
+            <div class="header">
+                <div class="logo">
+                    <img src="./images/logo.png" alt="logo-img" height="40px">
+                    <h2>FreddyCodz <br>
+                        <span>Academy</span>
+                    </h2>
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">HOME</a></li>
+                        <li><a href="index.html#about">ABOUT</a></li>
+                        <li><a href="index.html#courses">COURSES</a></li>
+                        <li><a href="signup.html">ACCOUNT</a></li>
+                    </ul>
+                </nav>
+
+                <div class="menu" onclick="openSideNav()">
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                </div>
+            </div>
+        </header>
+
+        <div class="side-bar" id="navbar">
+            <img src="./images/x.png" alt="" onclick="closeSideNav()" id="closeIcon">
+            <div class="nav">
+                <a href="index.html">HOME</a>
+                <a href="index.html#about">ABOUT</a>
+                <a href="index.html#courses">COURSES</a>
+                <a href="signup.html">ACCOUNT</a>
+            </div>
+        </div>
+
+        <div class="hero-section">
+
+            <div class="intro">
+                <p>Welcome to</p>
+                <h1>
+                    FreddyCodz <span>Academy</span>
+                </h1>
+                <div class="labels">
+                    <label>Learn.</label>
+                    <label>Build.</label>
+                    <label>Grow.</label>
+                </div>
+
+                <p id="para">
+                    Welcome to FreddyCode Academy, where aspiring developers begin their journey 
+                    into the world of web development.
+                </p>
+                <button onclick="window.location.href ='signup.html'">Become a student</button>
+            </div>
+
+            <div class="image">
+                <img src="./images/BackgroundEraser_20260712_193155135.webp" alt="" id="hero-image">
+            </div>
+
+        </div>
+
+        <h2 id="journey">Your Journey of Web Development Starts Here!</h2>
+
+        <div class="about" id="about">
+
+            <div class="about-image">
+                <img src="./images/10_AI_Tools_That_Make_Software_Development_Easy-removebg-preview.webp" alt="about-image" loading="lazy">
+            </div>
+
+            <div class="about-content">
+                <h2>About Us</h2>
+
+                <div class="about-para">
+                    <p>FreddyCode Academy was founded with one goal: to make learning web development simple, practical, and enjoyable.</p>
+                    <p>Rather than focusing only on theory, our training emphasizes hands-on experience. Every lesson is followed by practical
+                        exercises and projects that help you understand how websites are built in the real world.</p>
+                    <p>We believe that learning by doing is the fastest path to becoming a confident developer. Throughout the program,
+                        you'll receive guidance, feedback, and encouragement as you grow your skills.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="mission">
+            <div id="mission">
+                <h2>Our Mission</h2>
+                <p>To empower beginners with practical web development skills that prepare them to create 
+                    modern websites, solve real-world problems, and begin successful careers in technology.</p>
+            </div>
+
+            <div id="vision">
+                <h2>Our Vision</h2>
+                <p>To build a community of passionate developers who continuously learn, innovate, and inspire others through technology.</p>
+            </div>
+        </div>
+
+        <div class="learn_languages" id="courses">
+            <h2>What you will Learn...</h2>
+            <div id="learn">
+                <div class="learn">
+                    <div class="img"><img src="./images/html.webp" alt="html-img" height="200px" loading="lazy"></div>
+                    <h3>HTML-5 Fundamentals</h3>
+                    <p>Learn the foundation of every website by understanding how to structure web </p>
+                </div>
+
+                <div class="learn">
+                    <div class="img"><img src="./images/css.webp" alt="css-img" height="200px" loading="lazy"></div>
+                    <h3>CSS Styling</h3>
+                    <p>Bring your websites to life with beautiful designs. You'll learn how to style web pages</p>
+                 </div>
+                
+            </div>
+            
+            <div id="learn">
+                <div class="learn">
+                    <div class="img"><img src="./images/responsivedesign.webp" alt="responsive-img" height="200px" loading="lazy"></div>
+                    <h3>Responsive Web Design</h3>
+                    <p>Discover how to create websites that look great on phones, tablets, laptops, and desktops.</p>
+                </div>
+
+                <div class="learn">
+                    <div class="img"><img src="./images/projects.webp" alt="project-img" height="200px" loading="lazy"></div>
+                    <h3>Real-World Projects</h3>
+                    <p>Apply everything you've learned by building practical websites and projects that improve your problem-solving skills </p>
+                </div>
+            </div>
+            
+            <div id="learn"> 
+                <div class="learn">
+                    <div class="img"><img src="./images/js.webp" alt="js-img" height="200px" loading="lazy"></div>
+                    <h3>Javascript Basics</h3>
+                    <p>Add interactivity to your websites by learning the basics of JavaScript</p>
+                </div>
+
+                <div class="learn">
+                    <div class="img"><img src="./images/deployment.webp" alt="deploy-img" height="200px" loading="lazy"></div>
+                    <h3>Website Deployment</h3>
+                    <p>Learn how to publish your websites online so anyone can access them, giving you the confidence to share your work with clients</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="choose">
+            <h2>Why Choose Us</h2>
+
+            <div class="choose-group">
+
+                <div class="choose-content">
+                    <img src="./images/angle-brackets.svg" loading="lazy">
+                    <h4>Beginner Friendly</h4>
+                    <p>No previous programming experience is required. We start 
+                        from the fundamentals and guide you step by step.</p>
+                </div>
+
+                <div class="choose-content">
+                    <img src="./images/curly-braces.svg" loading="lazy">
+                    <h4>Practical Learning</h4>
+                    <p>
+                        Every topic includes hands-on exercises and real projects to strengthen your understanding
+                    </p>
+                </div>
+
+                <div class="choose-content">
+                    <img src="./images/people.svg" loading="lazy">
+                    <h4>Interractive Classes</h4>
+                    <p>
+                        Learning is fun, engaging, and collaborative through discussions, challenges, and practical sessions.
+                    </p>
+                </div>
+                
+            </div>
+        </div>
+
+        <div class="achieve">
+            <h4>20+ <br><span>Students taught</span></h4>
+            <h4>3k+ <br><span>Followers</span></h4>
+            <h4>5+ <br><span>Years of experience</span></h4>
+            <h4>3+ <br><span>Coding Courses</span></h4>
+        </div>
+
+        <div class="frequent">
+            <h2>Frequently Asked Questions</h2>
+
+            <div class="questions">
+                <h6>Do I need any programming experience? <span class="arrow"><img src="./images/arrow-down.svg" loading="lazy"></span></h6>
+                <p>No, This academy is designed specifically for beginners</p>
+            </div>
+
+            <div class="questions">
+                <h6>Do I need a laptop? <span class="arrow"><img src="./images/arrow-down.svg" loading="lazy"></span></h6>
+                <p>Yes. A laptop is strongly recommended so you can practice effectively.</p>
+            </div>
+
+            <div class="questions">
+                <h6>Will I build real projects?<span class="arrow"><img src="./images/arrow-down.svg" loading="lazy"></span></h6>
+                <p>Absolutely. Throughout the training, you'll build practical websites that demonstrate your skills.</p>
+            </div>
+
+            <div class="questions">
+                <h6>Will there be assignments?<span class="arrow"><img src="./images/arrow-down.svg" loading="lazy"></span></h6>
+                <p>Yes. Assignments are an important part of the learning process and help reinforce each lesson.</p>
+            </div>
+
+            <div class="questions">
+                <h6>How long does the training last? <span class="arrow"><img src="./images/arrow-down.svg" loading="lazy"></span></h6>
+                <p>The duration depends on the learning plan, but every student will have enough time to understand 
+                    each topic before moving forward.
+                </p>
+            </div>
+        </div>
+
+        <div class="start">
+            <h2>Ready to start</h2>
+            <p>We're excited to have you join our growing community of learners.</p>
+            <button onclick="window.location.href = 'signup.html'">Get Started</button>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2026 FreddyCodz Academy. All Rights Reserved</p>
+        <div class="links">
+            <a href="https://www.linkedin.com/in/edoghotu-azibaodiedia-7a7187404?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank" rel="noopener noreferer"><img src="./images/linkedIn.jpg" loading="lazy"></a>
+            <a href="https://www.instagram.com/dev_freddy?igsh=cGQ3dmY5Z24weG9o" target="_blank" rel="noopener noreferer"><img src="./images/instagram.png"></a>
+            <a href="https://www.tiktok.com/@edoghotuazibaodie?is_from_webapp=1&sender_device=pc" target="_blank" rel="noopener noreferer"><img src="./images/white-tiktok.png" alt="tiktok-icon"></a>
+        </div>
+        <p id="lastpara">
+            <a href="terms.html" id="terms">Terms of use </a>
+            <a href="policy.html" id="policy">Privacy Policy</a>
+        </p>
+    </footer>
+    
+    <script src="./script/side-nav.js"></script>
+    <script src="./script/script.js"></script>
+</body>
+</html>

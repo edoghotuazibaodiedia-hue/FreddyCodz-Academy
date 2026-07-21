@@ -1,0 +1,303 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    width: 100vw;
+    background-color: #dadcff5d;
+    overflow-x: hidden;
+    position: relative;
+}
+
+main{
+    width: 100%;
+}
+
+header{
+    width: 100%;
+    height: 70px;
+    background-color: #c2c5ff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.header{
+    width: 95%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header .logo{
+    width: 200px;
+    display: flex;
+    gap: 20px;
+}
+
+.header h2{
+    font-size: 22px;
+    line-height: 20px;
+    color: #000;
+}
+
+.header h2 span{
+    font-size: 18px;
+    font-weight: 400;
+    letter-spacing: 5px;
+    color: #000ba0;
+}
+
+.header ul{
+    width: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header ul li{
+    list-style: none;
+    font-weight: 550;
+    transition: .3s ease;
+}
+
+.header ul li a{
+    font-size: 16px;
+    text-decoration: none;
+    color: #000ba0;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: .3s ease;
+}
+
+/* #active{
+    background-color: #000ba0;
+    color: #fff;
+} */
+
+.header button{
+    background-image: linear-gradient(to right, #0011ff, #000ba0);
+    width: 100px;
+    height: 40px;
+    border: none;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: .3s ease;
+}
+
+.header button:hover{
+    transform: scale(1.05);
+}
+
+.menu{
+    height: 40px;
+    width: 50px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 7px;
+    transform: scale(0.6);
+    display: none;
+}
+/* 
+.menu:focus .side-bar{
+    transform: translateX(0);
+} */
+
+.line{
+    width: 100%;
+    height: 5px;
+    background-color: #fff;
+}
+
+.side-bar{
+    width: 340px;
+    height: 100vh;
+    background-color: #0011ff7e;
+    border-bottom: 5px solid #fff;
+    top: 70px;
+    left: 0;
+    z-index: 999;
+    backdrop-filter: brightness(50%);
+    padding: 20px;
+    position: relative;
+    position: fixed;
+    transform: translateX(-100vw);
+    opacity: 0;
+}
+
+.side-bar img{
+    filter: invert();
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    height: 30px;
+}
+
+.side-bar .nav a{
+    color: #fff;
+    height: 50px;
+    padding: 0 20px;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.side-bar .nav{
+    margin-top: 50px;
+    width: 100%;
+    padding: 20px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* #closeIcon{
+    transform: rotate(-360deg);
+}
+
+.openCloseIcon{
+    transition: .5s ease;
+    transform: rotate(360deg);
+}
+
+.closeCloseIcon{
+    transition: .5s ease;
+    transform: rotate(-360deg);
+} */
+
+.close{
+    transform: translateX(-100vw);
+    transition: .5s ease;
+    opacity: 0;
+}
+
+.open{
+    transform: translateX(0);
+    transition: .5s ease;
+    opacity: 1;
+}
+
+
+/* FOOTER SECTIONAL STYLES */
+
+footer{
+    height: 80px;
+    width: 100%;
+    background-color: #000;
+    color: #fff;
+    border-top: 1px solid #ffffff46;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 70px 0;
+}
+
+footer p{
+    opacity: 0.5;
+    font-size: 15px;
+}
+
+footer p:last-child{
+    width: 300px;
+    display: flex;
+    gap: 30px;
+    cursor: pointer;
+}
+
+#lastpara a{
+    color: #fff;
+    text-decoration: none;
+}
+
+#lastpara a:hover{
+    opacity: 1;
+}
+
+#policy:hover{
+    opacity: 1;
+}
+
+.links{
+    width: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.links img{
+    height: 20px;
+    opacity: 0.5;
+    transition: .3s ease;
+}
+
+.links img:hover{
+    opacity: 1;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+@media (max-width: 1024px) {
+    header{
+        width: 100vw;
+    }
+}
+
+@media (max-width: 768px) {
+    footer p{
+        font-size: 14px;
+    }
+
+    footer .links{
+        width: 80px;
+    }
+
+    footer .links a img{
+        height: 15px;
+    }
+
+    footer p:last-child{
+        width: 200px;
+    }
+}
+
+@media (max-width: 480px) {
+    .header .logo{
+        width: 200px;
+        display: flex;
+        flex-direction: row;
+        gap: 15px;
+    }
+    
+    .header nav{
+        display: none;
+    }
+
+    .header .menu{
+        display: flex;
+    }
+
+    .hero-section{
+        min-height: 400px;
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    footer{
+        flex-direction: column-reverse;
+        gap: 20px;
+    }
+}
